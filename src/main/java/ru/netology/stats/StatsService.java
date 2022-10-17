@@ -1,8 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public int SumAllSales(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int sumAllSales(int[] sale) {
         int sum = 0;
         for (int i = 0; i < sale.length; i++) {
             sum = sum + sale[i];
@@ -10,8 +9,7 @@ public class StatsService {
         return sum;
     }
 
-    public int AverageSalesPerMonth(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int averageSalesPerMonth(int[] sale) {
         double average;
         double sum = 0;
         for (int i = 0; i < sale.length; i++) {
@@ -21,8 +19,7 @@ public class StatsService {
         return (int) average;
     }
 
-    public int MinMonthNumber(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int minMonthNumber(int[] sale) {
         int minMonth = 0;
         for (int i = 0; i < sale.length; i++) {
             if (sale[i] < sale[minMonth]) {
@@ -32,8 +29,7 @@ public class StatsService {
         return minMonth;
     }
 
-    public int MaxMonthNumber(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int maxMonthNumber(int[] sale) {
         int maxMonth = 0;
         for (int i = 0; i < sale.length; i++) {
             if (sale[i] > sale[maxMonth]) {
@@ -43,8 +39,7 @@ public class StatsService {
         return maxMonth;
     }
 
-    public int AverageSalesMinMonth(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int averageSalesMinMonth(int[] sale) {
         double average;
         double sum = 0;
         int minValue = 0;
@@ -60,8 +55,7 @@ public class StatsService {
         return minValue;
     }
 
-    public int AverageSalesMaxMonth(long[] sales) {
-        int sale[] = {22, 44, 56, 71, 32, 43, 34, 45, 76, 55, 77, 88, 67, 45};
+    public int averageSalesMaxMonth(int[] sale) {
         double average;
         double sum = 0;
         int maxValue = 0;
